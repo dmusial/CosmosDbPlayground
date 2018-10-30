@@ -13,5 +13,10 @@ pipeline {
         sh 'dotnet build'
       }
     }
+    stage('Run the app') {
+      steps {
+        sh 'dotnet run'
+      }
+    }
   }
 }
